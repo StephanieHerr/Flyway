@@ -10,6 +10,16 @@
     "flywayConfFiles": [
       "./flyway.conf"
     ],
-    "generateUndoScripts": true
+    "generateUndoScripts": true,
+    "targetDatabases": [
+      {
+        "connectionProvider": {
+          "url": "jdbc:sqlserver://localhost;databaseName=Flyway_Test;encrypt=true;integratedSecurity=true;trustServerCertificate=true",
+          "type": "UsernamePassword"
+        },
+        "schemas": [],
+        "displayName": "Test"
+      }
+    ]
   }
 }
