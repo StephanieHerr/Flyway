@@ -1,0 +1,15 @@
+{
+  "version": "2.0",
+  "name": "FlywayTransactionTests",
+  "id": "9cc84053-924f-446d-925e-b00ae8291ca8",
+  "databaseType": "SqlServer",
+  "development": {
+    "scriptsFolder": "./schema-model"
+  },
+  "deployment": {
+    "flywayConfFiles": [
+      "./flyway.conf"
+    ],
+    "generateUndoScripts": true
+  }
+}
